@@ -1,8 +1,14 @@
 import React from 'react';
+import ConfLogo from '../images/badge-header.svg';
 
 class Badge extends React.Component {
     render() {
-        return <h1>Badge</h1>
+        return (
+            <div>
+                <img src={ConfLogo} />
+                <h1>Badge</h1>
+            </div>
+        )
     }
 }
 
