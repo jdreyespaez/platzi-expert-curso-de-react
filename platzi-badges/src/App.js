@@ -6,7 +6,11 @@ import Badge from './components/Badge'
 function App() {
   return (
     <div className="App">
-      <Badge />
+      <Badge 
+        firstName="Juan D."
+        lastName="Reyes P."
+        jobTitle="Frontend Engineer"
+      />
     </div>
   );
 }

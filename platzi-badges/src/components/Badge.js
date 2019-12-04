@@ -16,10 +16,10 @@ class Badge extends React.Component {
                         src="https://en.gravatar.com/userimage/35531970/01270987868c91ce3a31faa7b4441490.png" 
                         alt="Avatar de gravatar"
                     />
-                    <h1>Juan <br/>Reyes</h1>
+                    <h1>{this.props.firstName} <br/>{this.props.lastName}</h1>
                 </div>
                 <div className="Badge__section-info">
-                    <h3>Economista y front end developer</h3>
+                    <h3>{this.props.jobTitle}</h3>
                     <div>@jdreyespaez</div>
                 </div>
                 <div className="Badge__footer">#platziConf</div>
