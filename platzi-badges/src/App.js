@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import Badge from './components/Badge'
+import BadgeNew from './components/pages/BadgeNew'
 
 function App() {
   return (
     <div className="App">
-      <Badge 
-        firstName="Juan D."
-        lastName="Reyes P."
-        jobTitle="Frontend Engineer"
+      <BadgeNew
+        
       />
     </div>
   );
