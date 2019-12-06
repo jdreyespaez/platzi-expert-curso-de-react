@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import '../styles/BadgeNew.css'
 
+import Badge from '../Badge'
 import header from '../../images/badge-header.svg'
 import Navbar from '../Navbar'
 
@@ -12,6 +13,19 @@ class BadgeNew extends Component {
                 <Navbar />
                 <div className="BadgeNew__hero">
                     <img className="img-fluid" src={header} alt="Logo" />
+                </div>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <Badge
+                                firstName="Juan"
+                                lastName="Reyes"
+                                jobTitle="Software Engineer"
+                                twitter="@jdreyespaez"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         )
