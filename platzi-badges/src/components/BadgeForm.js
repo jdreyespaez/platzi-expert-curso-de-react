@@ -27,7 +27,12 @@ class BadgeForm extends Component {
               name="firstName"
             />
 
-            <button onClick={this.handleClick} className="btn btn-primary">Save</button>
+            <button 
+              type="button"
+              onClick={this.handleClick} 
+              className="btn btn-primary">
+                Save
+            </button>
           </div>
         </form>
       </div>
