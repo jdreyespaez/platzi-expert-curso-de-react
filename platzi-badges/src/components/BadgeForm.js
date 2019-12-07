@@ -12,12 +12,17 @@ class BadgeForm extends Component {
     console.log('Button was clicked')
   }
 
+  handleSubmit = e => {
+    e.preventDefault()
+    console.log('Forma was submitted')
+  }
+
 
   render() {
     return(
       <div>
         <h1>New Attendant</h1>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label>First Name</label>
             <input 
@@ -28,7 +33,7 @@ class BadgeForm extends Component {
             />
 
             <button 
-              type="button"
+              type="submit"
               onClick={this.handleClick} 
               className="btn btn-primary">
                 Save
