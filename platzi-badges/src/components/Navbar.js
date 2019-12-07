@@ -6,7 +6,7 @@ import logo from '../images/logo.svg'
 class Navbar extends React.Component {
     render() {
         return (
-            <div class="Navbar">
+            <div className="Navbar">
                 <div className="container-fluid">
                     <a className="Navbar__brand" href="/">
                         <img className="Navbar__brand-logo" src={logo} alt="logo"/>
