@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 
 class BadgeForm extends Component {
+  // (i) Inicializar el estado
   state={}
 
+  // (ii) Usando .setState({}) se crea el objeto que guardará el name:value
   handleChange = e => {
     // console.log({
     //   name: e.target.name,
@@ -29,6 +31,8 @@ class BadgeForm extends Component {
       <div>
         <h1>New Attendant</h1>
         <form onSubmit={this.handleSubmit}>
+          {/* (iii) Mediante value será posible llamar el método hecho a medida
+                    y la parte específica del state que lo guardará. */}
           <div className="form-group">
             <label>First Name</label>
             <input 
