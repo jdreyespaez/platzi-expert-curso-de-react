@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
 class BadgeForm extends Component {
+  state={}
+
   handleChange = e => {
     // console.log({
     //   name: e.target.name,
@@ -8,7 +10,7 @@ class BadgeForm extends Component {
     // })
 
     this.setState({
-      firstName: e.target.value,
+      [e.target.name]: e.target.value,
     })
   }
 
@@ -34,8 +36,55 @@ class BadgeForm extends Component {
               onChange={this.handleChange} 
               type="text"
               name="firstName"
+              value={this.state.firstName}
             />
+          </div>
 
+          <div className="form-group">
+            <label>Last Name</label>
+            <input 
+              className="form-control"
+              onChange={this.handleChange} 
+              type="text"
+              name="lastName"
+              value={this.state.lastName}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Email</label>
+            <input 
+              className="form-control"
+              onChange={this.handleChange} 
+              type="email"
+              name="email"
+              value={this.state.email}
+            />
+          </div>
+            
+          <div className="form-group">
+            <label>Job Title</label>
+            <input 
+              className="form-control"
+              onChange={this.handleChange} 
+              type="text"
+              name="jobTitle"
+              value={this.state.jobTitle}
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Twitter handle</label>
+            <input 
+              className="form-control"
+              onChange={this.handleChange} 
+              type="text"
+              name="twitter"
+              value={this.state.twitter}
+            />
+          </div>
+
+          <div className="form-group">
             <button 
               type="submit"
               onClick={this.handleClick} 
