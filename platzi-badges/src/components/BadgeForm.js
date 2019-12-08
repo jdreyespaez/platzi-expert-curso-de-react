@@ -2,9 +2,13 @@ import React, {Component} from 'react';
 
 class BadgeForm extends Component {
   handleChange = e => {
-    console.log({
-      name: e.target.name,
-      value: e.target.value,
+    // console.log({
+    //   name: e.target.name,
+    //   value: e.target.value,
+    // })
+
+    this.setState({
+      firstName: e.target.value,
     })
   }
 
