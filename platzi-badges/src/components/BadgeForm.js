@@ -40,7 +40,7 @@ class BadgeForm extends Component {
             <label>First Name</label>
             <input 
               className="form-control"
-              onChange={this.handleChange} 
+              onChange={this.props.onChange} 
               type="text"
               name="firstName"
               value={this.state.firstName}
@@ -51,7 +51,7 @@ class BadgeForm extends Component {
             <label>Last Name</label>
             <input 
               className="form-control"
-              onChange={this.handleChange} 
+              onChange={this.props.onChange} 
               type="text"
               name="lastName"
               value={this.state.lastName}
@@ -62,7 +62,7 @@ class BadgeForm extends Component {
             <label>Email</label>
             <input 
               className="form-control"
-              onChange={this.handleChange} 
+              onChange={this.props.onChange} 
               type="email"
               name="email"
               value={this.state.email}
@@ -73,7 +73,7 @@ class BadgeForm extends Component {
             <label>Job Title</label>
             <input 
               className="form-control"
-              onChange={this.handleChange} 
+              onChange={this.props.onChange} 
               type="text"
               name="jobTitle"
               value={this.state.jobTitle}
@@ -84,7 +84,7 @@ class BadgeForm extends Component {
             <label>Twitter handle</label>
             <input 
               className="form-control"
-              onChange={this.handleChange} 
+              onChange={this.props.onChange} 
               type="text"
               name="twitter"
               value={this.state.twitter}

@@ -8,6 +8,16 @@ import header from '../../images/badge-header.svg'
 import Navbar from '../Navbar'
 
 class BadgeNew extends Component {
+    state={form: {}}
+
+    handleChange = e => {
+        this.setState({
+            form: {
+                [e.target.name]: e.target.value,
+            },
+        })
+    }
+
     render() {
         return (
             <div>
@@ -27,7 +37,7 @@ class BadgeNew extends Component {
                             />
                         </div>
                         <div className="col-6">
-                            <BadgeForm />
+                            <BadgeForm onChange={this.handleChange}/>
                         </div>
                     </div>
                 </div>
