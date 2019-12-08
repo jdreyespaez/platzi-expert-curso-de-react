@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 
 class BadgeForm extends Component {
   // (i) Inicializar el estado
-  state={}
+  state={
+    jobTitle: 'Designer'
+  }
 
   // (ii) Usando .setState({}) se crea el objeto que guardará el name:value
   handleChange = e => {
@@ -23,6 +25,7 @@ class BadgeForm extends Component {
   handleSubmit = e => {
     e.preventDefault()
     console.log('Forma was submitted')
+    console.log(this.state)
   }
 
 
