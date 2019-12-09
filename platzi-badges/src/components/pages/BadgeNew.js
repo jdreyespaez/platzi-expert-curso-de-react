@@ -15,6 +15,9 @@ class BadgeNew extends Component {
     handleChange = e => {
         this.setState({
             form: {
+                // 16- Solución 2 que propone Richard Kaufman es con
+                // el spread operator 
+                ...this.state.form,
                 [e.target.name]: e.target.value,
             },
         })
