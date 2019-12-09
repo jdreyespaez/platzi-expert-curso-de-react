@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 class BadgeForm extends Component {
   // (i) Inicializar el estado
-  state={
-    jobTitle: 'Designer'
-  }
+  state={}
 
   // (ii) Usando .setState({}) se crea el objeto que guardará el name:value
   // 16- YA NO SE USA ESTE handleChange, pues viene del componente papá, papá!
