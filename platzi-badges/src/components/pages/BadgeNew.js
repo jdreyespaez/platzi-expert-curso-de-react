@@ -10,6 +10,8 @@ import Navbar from '../Navbar'
 class BadgeNew extends Component {
     state={form: {}}
 
+    // 16 - Subimos este método de BadgeForm a BadgeNew.js, el cual
+    // se compartirá como props a su componente inicial.
     handleChange = e => {
         this.setState({
             form: {
@@ -37,6 +39,7 @@ class BadgeNew extends Component {
                             />
                         </div>
                         <div className="col-6">
+                            {/* 16- Aquí se está compartiendo mediante props a BadgeForm.js*/}
                             <BadgeForm onChange={this.handleChange}/>
                         </div>
                     </div>

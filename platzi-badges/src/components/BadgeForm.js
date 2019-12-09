@@ -7,16 +7,12 @@ class BadgeForm extends Component {
   }
 
   // (ii) Usando .setState({}) se crea el objeto que guardará el name:value
-  handleChange = e => {
-    // console.log({
-    //   name: e.target.name,
-    //   value: e.target.value,
-    // })
-
-    this.setState({
-      [e.target.name]: e.target.value,
-    })
-  }
+  // 16- YA NO SE USA ESTE handleChange, pues viene del componente papá, papá!
+  // handleChange = e => {
+  //   this.setState({
+  //     [e.target.name]: e.target.value,
+  //   })
+  // }
 
   handleClick = e => {
     console.log('Button was clicked')
@@ -40,6 +36,8 @@ class BadgeForm extends Component {
             <label>First Name</label>
             <input 
               className="form-control"
+              // 16- Aquí estoy pasando el .props desde el papá, papá! Es decir:
+              // BadgeNew.js tu papá, como el Junior que no fue en 2019, perdió contra el América de Cali la final del FPC 
               onChange={this.props.onChange} 
               type="text"
               name="firstName"
