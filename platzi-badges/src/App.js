@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
 
-import BadgeNew from './components/pages/BadgeNew'
+import Badges from './components/pages/Badges'
 
 function App() {
   return (
     <div className="App">
-      <BadgeNew
-        
-      />
+      <Badges/>
     </div>
   );
 }
