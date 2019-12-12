@@ -64,16 +64,7 @@ class Badges extends Component {
 
         <div className="Badges__list">
           <div className="Badges__container">
-            <BadgesList />
-            {/* <ul className="list-unstyled">
-              {this.state.data.map((badge) => {
-                return(
-                  <li key={badge.id}>
-                    <p>{badge.firstName} {badge.lastName}</p>
-                  </li>
-                )
-              })}
-            </ul> */}
+            <BadgesList badges={this.state.data}/>
           </div>
         </div>
 
