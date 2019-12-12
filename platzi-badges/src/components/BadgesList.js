@@ -7,7 +7,14 @@ class BadgesList extends Component {
         {this.props.badges.map((badge) => {
           return(
             <li key={badge.id}>
-              <p>{badge.firstName} {badge.lastName}</p>
+              <div className="Badge__container">
+                <img src={badge.avatarUrl} />
+                <p>{badge.firstName} {badge.lastName}</p>
+                <p>{badge.email}</p>
+                <div>
+                  {badge.twitter} {badge.jobTitle}
+                </div>
+              </div>
            </li>
           )
         })}
