@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 
 import '../styles/Badges.css'
 import ConfLogo from '../../images/badge-header.svg'
+import BadgesList from '../BadgesList'
 
 class Badges extends Component {
 
@@ -63,7 +64,8 @@ class Badges extends Component {
 
         <div className="Badges__list">
           <div className="Badges__container">
-            <ul className="list-unstyled">
+            <BadgesList />
+            {/* <ul className="list-unstyled">
               {this.state.data.map((badge) => {
                 return(
                   <li key={badge.id}>
@@ -71,7 +73,7 @@ class Badges extends Component {
                   </li>
                 )
               })}
-            </ul>
+            </ul> */}
           </div>
         </div>
 
