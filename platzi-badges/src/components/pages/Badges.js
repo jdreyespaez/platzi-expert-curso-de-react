@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Navbar from '../Navbar'
 import {Link} from 'react-router-dom'
 
 import '../styles/Badges.css'
@@ -43,7 +42,6 @@ class Badges extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <div className="Badges">
           <div className="Badges__hero">
             <div className="Badges__container">
